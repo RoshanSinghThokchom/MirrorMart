@@ -2,7 +2,7 @@
 
 ## Course Project: CYB206-25S-001 WEB APPLICATION SECURITY (Spring 2025 - 001)
 
-## Date: June 2025  
+## Date: 3rd June 2025  
 ## Team Name: Epsilon
 
 ---
