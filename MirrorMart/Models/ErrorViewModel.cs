@@ -1,6 +1,6 @@
 namespace MirrorMart.Models
 {
-    public class MirrorViewModel
+    public class ErrorViewModel
     {
         public string? RequestId { get; set; }
 

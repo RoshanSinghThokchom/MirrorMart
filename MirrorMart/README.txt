@@ -37,3 +37,49 @@ Team Members:
 	Create README Files
 	Design Logo
 	Update Company Profile
+
+	2025-06-09 2203
+
+-Set Up the Mirror Model
+ Created Models/Mirror.cs with properties:
+ Id, Type, Price, Material, Size, Shape
+
+-Created MirrorsController
+
+-Styled Catalog Table
+
+	2221
+
+-Added About Us Page
+Added AboutUs() method in HomeController.
+
+Created Views/Home/AboutUs.cshtml with:
+
+Company name: MirrorMart
+Location: Imphal, India
+
+Team:
+ Roshan Singh Thokchom – CEO
+
+ Ravi Prakash Gudipudi – Team Lead
+
+ Olayemi Olanrewaju – Developer
+
+	2238
+
+Updated Navigation Bar
+Added links to:
+
+Mirror Catalog
+
+	2246
+
+Add the About Us
+(inside _Layout.cshtml)
+
+Security Practices
+MVC architecture with clean separation
+
+Razor views help prevent script injection
+
+Identity setup is available if extended later
