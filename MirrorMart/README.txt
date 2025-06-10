@@ -114,7 +114,7 @@ we made some edit on the controller.cs for admin and user
 here are the password and username 
 
  Admin & Guest Login
-| Role  | Username               | Password   |
-|-------|------------------------|------------|
-| Admin | admin@mirrormart.com   | Admin@123  |
-| Guest | guest@mirrormart.com   | Guest@123  |
+ Role      Username                Password   
+------------------------------------------
+1. Admin  admin@mirrormart.com    Admin@123  
+2. Guest  guest@mirrormart.com    Guest@123  
