@@ -6,40 +6,39 @@ namespace MirrorMart
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Connection string
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
                 ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
-            // Register ApplicationDbContext
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
 
-            // Enable EF dev error filter
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            // Identity
             builder.Services.AddDefaultIdentity<IdentityUser>(options =>
                 options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>() // Add Role support
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            // MVC + Razor Pages
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            // Seed the database with mirror data
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
+
+                // Seed mirror data
                 var context = services.GetRequiredService<ApplicationDbContext>();
-                DbInitializer.Initialize(context); // <-- Seed here
+                DbInitializer.Initialize(context);
+
+                // Seed Roles and Users
+                await IdentitySeedData.SeedRolesAndUsersAsync(services);
             }
 
-            // Middleware
             if (app.Environment.IsDevelopment())
             {
                 app.UseMigrationsEndPoint();
@@ -55,6 +54,7 @@ namespace MirrorMart
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

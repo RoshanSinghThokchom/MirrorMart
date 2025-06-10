@@ -107,3 +107,14 @@ edited the code in program.cs
 tested the appliction it was running successfully showing the mirror info.
 
 >>>>>>> 9f115a8586010f9ca1419e6d82aec75f8bd54d6e
+
+1550
+
+we made some edit on the controller.cs for admin and user 
+here are the password and username 
+
+ Admin & Guest Login
+| Role  | Username               | Password   |
+|-------|------------------------|------------|
+| Admin | admin@mirrormart.com   | Admin@123  |
+| Guest | guest@mirrormart.com   | Guest@123  |
