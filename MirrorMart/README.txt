@@ -89,3 +89,8 @@ MVC architecture with clean separation
 Razor views help prevent script injection
 
 Identity setup is available if extended later
+
+6/10/2025
+
+11:20 Created and Added Logo to Views
+11.28 Commited and Pushed Changes to Github
