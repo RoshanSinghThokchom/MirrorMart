@@ -89,3 +89,14 @@ MVC architecture with clean separation
 Razor views help prevent script injection
 
 Identity setup is available if extended later
+
+2025-06-10
+1040
+Added new class "SeedData" in models and added the mirror information to it.
+
+1050
+edited the code in program.cs 
+
+1055
+tested the appliction it was running successfully showing the mirror info.
+
