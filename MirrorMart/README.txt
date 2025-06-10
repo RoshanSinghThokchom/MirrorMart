@@ -38,6 +38,12 @@ Team Members:
 	Design Logo
 	Update Company Profile
 
+
+	2025-06-09 2335
+
+Initial created 20250608234008_InitialCreate.Designer
+
+
 	2025-06-09 2203
 
 -Set Up the Mirror Model
