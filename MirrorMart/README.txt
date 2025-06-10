@@ -107,3 +107,14 @@ edited the code in program.cs
 tested the appliction it was running successfully showing the mirror info.
 
 >>>>>>> 9f115a8586010f9ca1419e6d82aec75f8bd54d6e
+
+1420
+Home layout had changed and got stuck in that step , not showing the logo 
+1450
+Resolved the issue that the root folder got under the properties folder , so we got stuck in the logo visible problem .
+1500
+Updated the welcome page and read me. 
+
+1526
+ Tested the app ...... every thing went good .
+
