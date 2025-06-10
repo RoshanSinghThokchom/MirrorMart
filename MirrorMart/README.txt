@@ -90,7 +90,20 @@ Razor views help prevent script injection
 
 Identity setup is available if extended later
 
+<<<<<<< HEAD
 6/10/2025
 
 11:20 Created and Added Logo to Views
 11.28 Commited and Pushed Changes to Github
+=======
+2025-06-10
+1040
+Added new class "SeedData" in models and added the mirror information to it.
+
+1050
+edited the code in program.cs 
+
+1055
+tested the appliction it was running successfully showing the mirror info.
+
+>>>>>>> 9f115a8586010f9ca1419e6d82aec75f8bd54d6e
